@@ -1,0 +1,15 @@
+<table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Details</th>
+      <th>Calories</th>
+    </tr>
+  <tbody>
+    <tr *ngFor="let meal of childMeals">
+      <td>{{meal.name}}</td>
+      <td>{{meal.details}}</td>
+      <td [class]="calorieColors(meal)">{{meal.calories}}</td>
+    </tr>
+  </tbody>
+</table>
