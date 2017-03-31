@@ -15,7 +15,7 @@ This project is meant to learn more about how to use Angular. Its purpose is to 
 
 1. Using Angular CLI, run `ng new meal-tracker`
 2. Create Meal object, with properties for name, details, and calories
-   * `ng g model Meal` - Model for Meal object
+   * Create model for Meal object
 3. Create form for user to enter meal, which will instantiate a new meal object
    * `ng g component new-meal` - Form and methods associated with instantiating new Meal object
 4. Create some sort of interface (table, list, etc.) which will show the meals that have been entered
