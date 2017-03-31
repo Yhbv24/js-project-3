@@ -1,8 +1,9 @@
 <div class="form-group">
   <select (change)="onChange($event.target.value)" class="form-control">
     <option value="allMeals" selected="selected">All Meals</option>
-    <option value="high_calories">> 600 Calories</option>
-    <option value="low_calories">< 200 Calories</option>
+    <option value="high_calories">More Than 600 Calories</option>
+    <option value="medium_calories">Between 200 and 600 Calories</option>
+    <option value="low_calories">Less Than 200 Calories</option>
   </select><br>
 </div>
 <table class="table table-striped table-hover table-responsive">
