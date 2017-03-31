@@ -1,6 +1,29 @@
-# MealTracker
+# Meal Tracker
+#### By Ash Laidlaw
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+This project is meant to learn more about how to use Angular. Its purpose is to be a meal tracker, where a user can log his/her meals and keep track of calorie count. The user will be able to enter a meal, view previous meals, and sort meals by calorie count. A user will also be able to edit previous meals once they have been entered.
+
+## Technologies Used
+
+* HTML
+* CSS
+* JavaScript
+* Angular 2
+* Bootstrap CDN
+
+## Production Steps
+
+1. Using Angular CLI, run `ng new meal-tracker`
+2. Create Meal object, with properties for name, details, and calories
+   * `ng g model Meal` - Model for Meal object
+3. Create form for user to enter meal, which will instantiate a new meal object
+   * `ng g component new-meal` - Form and methods associated with instantiating new Meal object
+4. Create some sort of interface (table, list, etc.) which will show the meals that have been entered
+   * `ng g component meal-list` - Methods to show meals
+5. Allow user to edit the meals, which will update meals
+   * `ng g component edit-meal` - Form and methods associated with editing a meal
+6. Allow user to sort the meals by calorie count
+   * `ng g pipe sort-meal` - Create a pipe to allow user to selectively show meals with certain calorie counts
 
 ## Development server
 
@@ -10,19 +33,9 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
 
-## Build
+## Clone/Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1. Clone the project from `https://github.com/Yhbv24/js-project-3`.
+2. Navigate into the project folder.
+3. Run `npm install`, then run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+4. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
