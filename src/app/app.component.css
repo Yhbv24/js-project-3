@@ -5,3 +5,17 @@
 .center {
   text-align: center;
 }
+
+.jumbotron {
+  height: 250px;
+  background-image: url(../assets/food.jpg);
+  border-bottom: 1px solid black;
+}
+
+.jumbotron h1 {
+  padding-left: 20px;
+}
+
+.jumbotron h4 {
+  padding-left: 20px;
+}
