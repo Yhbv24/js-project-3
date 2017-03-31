@@ -4,12 +4,19 @@
       <th>Name</th>
       <th>Details</th>
       <th>Calories</th>
+      <th>Edit Meal</th>
+      <th>Delete Meal</th>
     </tr>
   <tbody>
     <tr *ngFor="let meal of childMeals">
       <td>{{meal.name}}</td>
       <td>{{meal.details}}</td>
       <td [class]="calorieColors(meal)">{{meal.calories}}</td>
+      <td>
+        <button class="btn btn-xs form_edit_button" (click)="editToggle(meal)" *ngIf="!meal.edit">Edit</button>
+        <app-edit-meal *ngIf="meal.edit" [meal]="meal">Loading...</app-edit-meal>
+      </td>
+      <td><button class="btn btn-xs form_delete_button" (click)="deleteMeal(meal)">Delete</button></td>
     </tr>
   </tbody>
 </table>

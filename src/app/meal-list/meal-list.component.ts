@@ -9,6 +9,14 @@ import { Meal } from '../meal.model';
 export class MealListComponent implements OnInit {
   @Input() childMeals: Meal[];
 
+  editToggle(meal) {
+    if (!meal.edit) {
+      meal.edit = true;
+    } else {
+      meal.edit = false;
+    }
+  }
+
   calorieColors(meal) {
     if (meal.calories >= 600) {
       return "many_calories";

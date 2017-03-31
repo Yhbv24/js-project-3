@@ -9,3 +9,17 @@
 .few_calories {
   background-color: #e8f5e9;
 }
+
+.form_edit_button {
+  background-color: #78909c;
+  color: white;
+}
+
+.form_delete_button {
+  background-color: #d50000;
+  color: white;
+}
+
+.table th {
+  text-align: center;
+}

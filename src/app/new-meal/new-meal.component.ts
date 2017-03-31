@@ -12,6 +12,18 @@ export class NewMealComponent implements OnInit {
   constructor() { }
 
   newMeal(name, details, calories) {
+    if (name === "") {
+      name = "no name entered";
+    }
+
+    if (details === "") {
+      details = "no details entered";
+    }
+
+    if (calories === "") {
+      calories = "0";
+    }
+    
     var meal = new Meal(name, details, calories);
     this.childMeals.push(meal);
   }

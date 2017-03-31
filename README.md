@@ -24,6 +24,8 @@ This project is meant to learn more about how to use Angular. Its purpose is to 
    * `ng g component edit-meal` - Form and methods associated with editing a meal
 6. Allow user to sort the meals by calorie count
    * `ng g pipe sort-meal` - Create a pipe to allow user to selectively show meals with certain calorie counts
+7. Allow user to delete an entry
+   * `ng g component delete-meal` - Delete button which will remove an instance of a meal
 
 ## Development server
 
