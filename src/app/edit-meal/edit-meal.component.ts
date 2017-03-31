@@ -24,5 +24,4 @@ export class EditMealComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

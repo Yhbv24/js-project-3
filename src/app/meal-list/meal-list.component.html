@@ -16,7 +16,9 @@
         <button class="btn btn-xs form_edit_button" (click)="editToggle(meal)" *ngIf="!meal.edit">Edit</button>
         <app-edit-meal *ngIf="meal.edit" [meal]="meal" (clickEditToggleSender)="editToggle($event)">Loading...</app-edit-meal>
       </td>
-      <td><button class="btn btn-xs form_delete_button" (click)="deleteMeal(meal)">Delete</button></td>
+      <td>
+        <app-delete-meal [meal]="meal" [childMeals]="childMeals"></app-delete-meal>
+      </td>
     </tr>
   </tbody>
 </table>

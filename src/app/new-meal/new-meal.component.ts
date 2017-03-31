@@ -30,5 +30,4 @@ export class NewMealComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

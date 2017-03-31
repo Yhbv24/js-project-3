@@ -31,5 +31,4 @@ export class MealListComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }
