@@ -9,6 +9,8 @@ import { Meal } from '../meal.model';
 export class MealListComponent implements OnInit {
   @Input() childMeals: Meal[];
 
+  filterByCalories: string = "allMeals";
+
   editToggle(meal) {
     if (!meal.edit) {
       meal.edit = true;
@@ -25,6 +27,10 @@ export class MealListComponent implements OnInit {
     } else {
       return "few_calories";
     }
+  }
+
+  onChange(optionFromMenu) {
+    this.filterByCalories = optionFromMenu;
   }
 
   constructor() { }

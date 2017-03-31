@@ -1,3 +1,10 @@
+<div class="form-group">
+  <select (change)="onChange($event.target.value)" class="form-control">
+    <option value="allMeals" selected="selected">All Meals</option>
+    <option value="high_calories">> 600 Calories</option>
+    <option value="low_calories">< 200 Calories</option>
+  </select><br>
+</div>
 <table class="table table-striped table-hover">
   <thead>
     <tr>
@@ -8,7 +15,7 @@
       <th>Delete Meal</th>
     </tr>
   <tbody>
-    <tr *ngFor="let meal of childMeals">
+    <tr *ngFor="let meal of childMeals | sortMeal:filterByCalories">
       <td>{{meal.name}}</td>
       <td>{{meal.details}}</td>
       <td [class]="calorieColors(meal)">{{meal.calories}}</td>
