@@ -18,6 +18,7 @@ export class EditMealComponent implements OnInit {
     meal.name = name;
     meal.details = details;
     meal.calories = calories;
+    meal.edit = false;
   }
 
   constructor() { }
