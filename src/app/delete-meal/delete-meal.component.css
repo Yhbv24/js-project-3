@@ -2,3 +2,7 @@
   background-color: #d50000;
   color: white;
 }
+
+.btn:focus, .btn:active {
+  outline: none
+}

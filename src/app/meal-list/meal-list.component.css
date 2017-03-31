@@ -18,3 +18,7 @@
 .table th {
   text-align: center;
 }
+
+.btn:focus, .btn:active {
+  outline: none
+}
