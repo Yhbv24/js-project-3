@@ -14,7 +14,7 @@
       <td [class]="calorieColors(meal)">{{meal.calories}}</td>
       <td>
         <button class="btn btn-xs form_edit_button" (click)="editToggle(meal)" *ngIf="!meal.edit">Edit</button>
-        <app-edit-meal *ngIf="meal.edit" [meal]="meal">Loading...</app-edit-meal>
+        <app-edit-meal *ngIf="meal.edit" [meal]="meal" (clickEditToggleSender)="editToggle($event)">Loading...</app-edit-meal>
       </td>
       <td><button class="btn btn-xs form_delete_button" (click)="deleteMeal(meal)">Delete</button></td>
     </tr>

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Meal } from '../meal.model';
 
 @Component({
@@ -8,6 +8,11 @@ import { Meal } from '../meal.model';
 })
 export class EditMealComponent implements OnInit {
   @Input() meal: Meal;
+  @Output() clickEditToggleSender = new EventEmitter();
+
+  closeEdit(meal: Meal) {
+    this.clickEditToggleSender.emit(meal);
+  }
 
   editMeal(meal, name, details, calories) {
     meal.name = name;

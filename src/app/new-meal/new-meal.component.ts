@@ -23,7 +23,7 @@ export class NewMealComponent implements OnInit {
     if (calories === "") {
       calories = "0";
     }
-    
+
     var meal = new Meal(name, details, calories);
     this.childMeals.push(meal);
   }
